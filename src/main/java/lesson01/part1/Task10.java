@@ -15,5 +15,9 @@ public class Task10 {
      */
 
     public static void main(String[] args) {
+
+        int iMin = 30;
+
+        System.out.println(iMin * 60);
     }
 }

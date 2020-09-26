@@ -1,5 +1,7 @@
 package lesson01.part1;
 
+import lesson02.cw.loop.Do;
+
 public class Task08 {
 
     /**
@@ -27,8 +29,6 @@ public class Task08 {
     }
 
     public static int getMetreFromCentimetre(int centimetre) {
-        //напишите тут ваш код
-
-        return 0;
+        return Integer.divideUnsigned(243, 100);
     }
 }

@@ -26,7 +26,9 @@ public class Task09 {
     }
 
     public static int sumDigitsInNumber(int number) {
-        //напишите тут ваш код
-        return 0;
+        String sNumber = String.format("%d", number);
+        return Integer.parseInt(sNumber.substring(0,1)) +
+                Integer.parseInt(sNumber.substring(1,2)) +
+                Integer.parseInt(sNumber.substring(2,3));
     }
 }
