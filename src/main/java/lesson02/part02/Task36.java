@@ -1,5 +1,7 @@
 package lesson02.part02;
 
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры два числа m и n.
  * Используя цикл for вывести на экран прямоугольник размером m на n из восьмёрок.
@@ -17,7 +19,18 @@ package lesson02.part02;
 
 public class Task36 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
+        Scanner scanner = new Scanner(System.in);
+
+        int iNumber1 = Integer.parseInt(scanner.nextLine());
+        int iNumber2 = Integer.parseInt(scanner.nextLine());
+
+        for (int j = 1; j <= iNumber1; j++){
+            for (int i = 1; i <= iNumber2; i++){
+                System.out.print(8);
+            }
+            System.out.println();
+        }
 
     }
 }

@@ -1,5 +1,8 @@
 package lesson02.part02;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры три числа, вывести на экран среднее из них. Т.е. не самое большое и не самое маленькое.
  * Если все числа равны, вывести любое из них.
@@ -15,7 +18,18 @@ package lesson02.part02;
 
 public class Task41 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
+        Scanner scanner = new Scanner(System.in);
+
+        int[] iArray = new int[3];
+        iArray[0] = Integer.parseInt(scanner.nextLine());
+        iArray[1] = Integer.parseInt(scanner.nextLine());
+        iArray[2] = Integer.parseInt(scanner.nextLine());
+
+        Arrays.sort(iArray);
+
+        System.out.println(iArray[1]);
+
 
     }
 }

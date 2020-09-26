@@ -26,7 +26,21 @@ package lesson02.part02;
 
 public class Task34 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+
+        int i = 1;
+        int j = 1;
+
+        while (j <= 10) {
+            while (i <= 10) {
+                System.out.print(i * j + " ");
+
+                i++;
+            }
+            System.out.println();
+
+            j++;
+            i = 1;
+        }
 
     }
 }

@@ -29,7 +29,16 @@ import java.util.*;
 
 public class Task25 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
+        Scanner scanner = new Scanner(System.in);
+
+        int iNumber1 = Integer.parseInt(scanner.nextLine());
+        int iNumber2 = Integer.parseInt(scanner.nextLine());
+
+        if (iNumber1 > 0 && iNumber2 > 0) System.out.println(1);
+        if (iNumber1 < 0 && iNumber2 > 0) System.out.println(2);
+        if (iNumber1 < 0 && iNumber2 < 0) System.out.println(3);
+        if (iNumber1 > 0 && iNumber2 < 0) System.out.println(4);
 
     }
 }

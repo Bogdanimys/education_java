@@ -1,5 +1,10 @@
 package lesson02.part02;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Scanner;
+
 /**
  * Ввести с клавиатуры три числа, и вывести их в порядке убывания. Выведенные числа должны быть разделены пробелом.
  *
@@ -13,7 +18,16 @@ package lesson02.part02;
 
 public class Task20 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
+        Scanner scanner = new Scanner(System.in);
+
+        Integer[] aNumbers = {
+                Integer.parseInt(scanner.nextLine()), Integer.parseInt(scanner.nextLine()),
+                Integer.parseInt(scanner.nextLine()), Integer.parseInt(scanner.nextLine())};
+
+        Arrays.sort(aNumbers, Collections.reverseOrder());
+
+        System.out.println(Arrays.toString(aNumbers));
 
     }
 }

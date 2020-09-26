@@ -21,7 +21,16 @@ import java.util.*;
 
 public class Task24 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
+        Scanner scanner = new Scanner(System.in);
+
+        int iNumber1 = Integer.parseInt(scanner.nextLine());
+        int iNumber2 = Integer.parseInt(scanner.nextLine());
+        int iNumber3 = Integer.parseInt(scanner.nextLine());
+
+        if (iNumber1 != iNumber2 && iNumber1 != iNumber3) System.out.println(iNumber1);
+        if (iNumber2 != iNumber1 && iNumber2 != iNumber3) System.out.println(iNumber2);
+        if (iNumber3 != iNumber2 && iNumber3 != iNumber1) System.out.println(iNumber3);
 
     }
 }

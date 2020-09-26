@@ -24,7 +24,16 @@ package lesson02.part02;
 
 public class Task37 {
     public static void main(String[] args) {
-        //напишите тут ваш код
+
+        int i2 = 1;
+
+        for (int j = 1; j <= 10; j++){
+            for (int i1 = 1; i1 <= i2; i1++){
+                System.out.print(8);
+            }
+            i2++;
+            System.out.println();
+        }
 
     }
 }

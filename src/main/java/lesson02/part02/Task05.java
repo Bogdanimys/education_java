@@ -20,8 +20,8 @@ public class Task05 {
     public static class Cat {
         private static int catsCount = 0;
 
-        public static void setCatsCount(int catsCount) {
-            //напишите тут ваш код
+        public static void setCatsCount(int n1) {
+             catsCount = n1;
 
         }
     }

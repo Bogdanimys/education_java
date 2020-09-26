@@ -33,7 +33,17 @@ import java.util.*;
 
 public class Task27 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
+        Scanner scanner = new Scanner(System.in);
+
+        int iNumber1 = Integer.parseInt(scanner.nextLine());
+
+        if (Math.floorMod(iNumber1, 2) == 0) System.out.print("чётное ");
+        else System.out.print("нечётное ");
+
+        if (Integer.toString(iNumber1).length() == 3) System.out.println("трёхзначное число");
+        if (Integer.toString(iNumber1).length() == 2) System.out.println("двухзначеное число");
+        if (Integer.toString(iNumber1).length() == 1) System.out.println("однозначеное число");
 
     }
 }

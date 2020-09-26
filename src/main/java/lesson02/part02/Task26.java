@@ -28,7 +28,19 @@ import java.util.*;
 
 public class Task26 {
     public static void main(String[] args) throws Exception {
-        //напишите тут ваш код
+
+        Scanner scanner = new Scanner(System.in);
+
+        int iNumber1 = Integer.parseInt(scanner.nextLine());
+
+        if (iNumber1 == 0) System.out.println("ноль");
+        else {
+            if (iNumber1 < 0) System.out.print("отрицательное ");
+            else System.out.print("положительное ");
+
+            if (Math.floorMod(iNumber1, 2) == 0) System.out.println("чётное число");
+            else System.out.println("нечётное число");
+        }
 
     }
 }
