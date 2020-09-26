@@ -15,6 +15,6 @@ public class Task03 {
      */
 
     public static void main(String[] args) {
-        // Напишите здесь ваш код
+        System.out.println("Год основания МТУСИ: " + (2019 - 98));
     }
 }
